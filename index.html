@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mutual BDSM Relationship & Consent Agreement</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f3f0f4;color:#242126;margin:0;padding:20px 12px;line-height:1.5}.card{max-width:720px;margin:0 auto;background:#fff;padding:clamp(18px,4vw,32px);border-radius:18px;box-shadow:0 8px 28px #20132912}h1{font-size:clamp(1.45rem,4vw,2rem);line-height:1.2;margin:0 0 10px}h2{font-size:1.05rem;margin:26px 0 10px;border-bottom:1px solid #e8e2eb;padding-bottom:7px}.intro,.small{font-size:.9rem;color:#625b66}.field{display:block;font-weight:650;margin:14px 0 6px}input[type=text],input[type=date],textarea{width:100%;padding:12px;border:1px solid #cfc7d3;border-radius:9px;background:white;color:#242126;font:inherit}input[readonly]{background:#f7f5f8}.check{display:flex;gap:10px;align-items:flex-start;margin:14px 0;font-weight:450}.check input{margin-top:5px;flex:0 0 auto;width:18px;height:18px}.submit{width:100%;border:0;border-radius:10px;padding:14px;margin-top:22px;background:#302637;color:#fff;font:inherit;font-weight:700;font-size:1rem;cursor:pointer}.submit:disabled{opacity:.6;cursor:wait}.status{margin-top:14px;font-size:.92rem;overflow-wrap:anywhere}.notice{padding:12px;border-radius:10px;background:#f8f5fa;color:#504657;font-size:.86rem}.req{color:#9b2538}footer{max-width:720px;margin:14px auto 0;text-align:center;color:#6c6570;font-size:.78rem}
+</style>
+</head>
+<body>
+<main class="card">
+<h1>Mutual BDSM Relationship & Consent Agreement</h1>
+<p class="intro">This form records the participants’ stated understanding. Participation must remain consensual. Either person may pause or withdraw consent at any time; this agreement does not replace ongoing communication or applicable law.</p>
+<div class="notice">Please read each term carefully. Do not sign unless you understand and freely agree to the terms. Both participants may sign by typing their names in the signature fields below.</div>
+<form id="agreementForm" action="https://formsubmit.co/Stephanielana768@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Completed Madame Novi & Randall Agreement"><input type="hidden" name="_template" value="table">
+<h2>1. Participants</h2>
+<label class="field" for="mistress">Mistress</label><input id="mistress" name="Mistress" value="Madame Novi" readonly>
+<label class="field" for="slave">Slave</label><input id="slave" name="Slave" value="Randall" readonly>
+<h2>2. Relationship term</h2>
+<label class="field" for="start">Start date <span class="req">*</span></label><input id="start" name="Start_Date" type="date" required>
+<label class="field" for="end">End date <span class="req">*</span></label><input id="end" name="End_Date" type="date" required>
+<p class="small">Initial duration: one (1) month. Please select dates that reflect the period you both intend.</p>
+<h2>3. Agreement and consent</h2>
+<label class="check"><input name="Mutual_Agreement" value="Agreed" type="checkbox" required><span>We mutually agree to enter this Mistress/slave relationship for the initial one-month term.</span></label>
+<label class="check"><input name="Exclusivity" value="Agreed" type="checkbox" required><span>During the agreed term, neither party will knowingly pursue another romantic, sexual, or BDSM partner.</span></label>
+<label class="check"><input name="Consent" value="Agreed" type="checkbox" required><span>We understand that BDSM participation must remain consensual, boundaries should be communicated, and either person may withdraw consent at any time.</span></label>
+<label class="check"><input name="Contractual_Fee" value="Agreed" type="checkbox" required><span>We have read and discussed the proposed $1,000 contractual fee if either party voluntarily breaks the relationship commitment, understanding that enforceability depends on applicable law and this clause may not be enforceable.</span></label>
+<h2>4. Additional terms</h2>
+<label class="field" for="terms">Optional notes, limits, or additional mutually agreed terms</label><textarea id="terms" name="Additional_Terms" rows="4" placeholder="Add any mutually agreed boundaries or notes here"></textarea>
+<h2>5. Electronic signatures</h2>
+<label class="field" for="mistressSignature">Madame Novi — typed signature</label><input id="mistressSignature" name="Madame_Novi_Signature" type="text" value="Madame Novi" required>
+<label class="field" for="mistressDate">Mistress signature date</label><input id="mistressDate" name="Madame_Novi_Date" type="date" value="2026-10-09" readonly>
+<label class="field" for="randallDate">Randall — signing date <span class="req">*</span></label><input id="randallDate" name="Randall_Date" type="date" required>
+<label class="field" for="randallSignature">Randall — type your full name as your signature <span class="req">*</span></label><input id="randallSignature" name="Randall_Signature" type="text" autocomplete="name" placeholder="Type your full name here" required>
+<p class="small">By typing his name and submitting, Randall confirms that he is signing voluntarily and that the participant details and selected terms are accurate to the best of his knowledge.</p>
+<button class="submit" id="submitButton" type="submit">Submit Signed Agreement</button>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+</form>
+</main>
+<footer>Keep a copy of the submission email for your records. After submitting, check the recipient inbox and spam folder to verify delivery before relying on this form.</footer>
+<script>
+(function(){
+ const form=document.getElementById('agreementForm');
+ form.addEventListener('submit',function(e){
+  if(!form.checkValidity()){form.reportValidity();return;}
+  const start=document.getElementById('start').value;
+  const end=document.getElementById('end').value;
+  if(end < start){e.preventDefault();alert('The end date must be on or after the start date.');return;}
+  const signature=document.getElementById('randallSignature').value.trim();
+  if(!signature){e.preventDefault();alert('Please type your full name as your signature.');return;}
+ });
+})();
+</script>
+</body></html>
